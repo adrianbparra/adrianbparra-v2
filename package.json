@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "name": "adrianbparra-website",
+  "private": false,
+  "description": "A simple portfolio website for adrianbparra created by adrianbparra",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Adrian Parra <adrianplane12@gmail.com>",
   "dependencies": {
     "gatsby": "^2.24.61",
     "gatsby-image": "^2.4.19",
@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/adrianbparra/adrianbparra-v2"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

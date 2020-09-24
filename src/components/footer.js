@@ -1,6 +1,9 @@
 import React from "react"
 import {Link} from "gatsby"
 
+
+// import "../styles/components/footer.sass"
+
 import { FaLinkedin,FaTwitterSquare,FaGithubSquare } from 'react-icons/fa';
 import APLogo from "../images/AP-Logo.png"
 
@@ -8,7 +11,7 @@ const Footer = () =>(
     <footer>
         <div>
             <div className="details">
-                <img src={APLogo} alt="ap logo"/>
+                <img src={APLogo}  width="50" height="50" alt="ap logo"/>
                 <p>I am a Full Stack Web Developer with experience in many <Link to="/about">languages and library's</Link>. I have created many Front end and Back end websites that are built with best practices.</p>
             </div>
             <div className="social">

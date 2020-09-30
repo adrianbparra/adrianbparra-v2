@@ -19,14 +19,14 @@ const Header = ({ siteTitle }) => {
       <Navbar fixed="top" expand="md">
         <Navbar.Brand className="title" as={Link} to="/">
         
-          <img src={APLogo} width="50" height="50" alt="AP-Logo"/>
+          <img src={APLogo} className="logo" width="30" height="30" alt="AP-Logo"/>
           <div>{siteTitle}</div>
           
         </Navbar.Brand>
       
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className="text-center">
           <Nav className="ml-auto">
             
             <Nav.Link as={Link} to="/" activeClassName="active">Home</Nav.Link>

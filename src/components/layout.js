@@ -29,12 +29,14 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <Container>
+    <>
       <Header siteTitle={data.site.siteMetadata?.title || `Adrian Parra`} />
-      <main className="main">{children}</main>
+      <Container fluid>
+        <main className="main">{children}</main>
+      </Container>
       <Footer/>
   
-    </Container>
+    </>
   )
 }
 

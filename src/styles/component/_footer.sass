@@ -1,4 +1,53 @@
+    
+footer
+    padding-top: 2rem
+    padding-bottom: 2rem
+    background-color: var(--cyan)
+    
+    a
+        // @extend .navbar-nav
+        text-decoration: underline
+        color: rgba(0, 0, 0, 0.5)
+        &:hover, &:focus
+            color: var(--dark)
+        span
+                padding-left: 0.2rem
+                display: inline-block
+                vertical-align: text-top
+                text-decoration: underline
+
+    dt 
+        text-transform: uppercase
 
 
-details
-    color: red
+    @include media-breakpoint-up(lg)
+        padding-left: 2rem
+        padding-right: 2rem
+
+    @include media-breakpoint-up(xl)
+        
+        padding-left: 6rem
+        padding-right: 6rem
+
+    .footer-img
+        max-width: 7rem
+        margin-right: 2rem
+        @include media-breakpoint-up(md)
+            max-width: 9rem
+        
+        .ap-footer-logo
+            width: 100%
+
+    .footer-about-me
+        font-size: 1rem
+        @include media-breakpoint-up(md)
+            font-size: 1.4rem
+
+    .footer-social
+
+        @include media-breakpoint-up(md)
+            display: flex
+            justify-content: space-around
+
+        @include media-breakpoint-up(xl)
+            display: block

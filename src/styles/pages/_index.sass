@@ -1,13 +1,30 @@
 .index-title
     background-color: white
-
+    h1
+        font-weight: 700
+    p
+        font-size: 1.2rem
 
     @include media-breakpoint-up(lg) 
         h1
             font-size: 4rem
+        p
+            font-size: 2rem
+            
     
     @include media-breakpoint-up(xl)
         h1
             font-size: 5rem
     
-    
+        p
+            padding-right: 12rem
+            padding-left: 12rem
+
+
+.index-types
+    .card
+        .card-header
+            font-size: 1.5rem
+            font-weight: 700
+
+            

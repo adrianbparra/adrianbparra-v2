@@ -31,7 +31,7 @@ const Header = ({ siteTitle }) => {
             
             <Nav.Link as={Link} to="/" activeClassName="active">Home</Nav.Link>
         
-            <Nav.Link as={Link} to="/portfolio" activeClassName="active">Portfolio</Nav.Link>
+            <Nav.Link as={Link} to="/portfolio" activeClassName="active" partiallyActive={true}>Portfolio</Nav.Link>
           
             <Nav.Link as={Link} to="/about" activeClassName="active">About</Nav.Link>
           

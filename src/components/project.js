@@ -5,6 +5,10 @@ import Image from "gatsby-image"
 import Container from "react-bootstrap/Container"
 import Jumbotron from "react-bootstrap/Jumbotron"
 import Button from "react-bootstrap/Button"
+import ListGroup from "react-bootstrap/ListGroup";
+import Col from "react-bootstrap/Col"
+import Row from "react-bootstrap/Row"
+
 
 const Project = ({project}) => {
 
@@ -14,13 +18,30 @@ const Project = ({project}) => {
     const imgMobile = project.image_mobile.childImageSharp.fluid;
 
     return (
-        <Container fluid>
+        <Container>
+            <Jumbotron>
+                <h1>{title}</h1>
+                <h3>{subtitle}</h3>
+            </Jumbotron>
+
+        <Row>
+
             
-            <Container>
-                <Jumbotron>
-                    <h1>{title}</h1>
-                    <h3>{subtitle}</h3>
-                </Jumbotron>
+            <Col md={2}>
+                <Button variant="info" href={url} block>View Website</Button>
+
+                <Container fluid="true">
+                    <h4 className="tech-title">Technologies</h4>
+
+                    <ListGroup>
+                
+                        {technologies.map(tech => <ListGroup.Item key={tech}>{tech}</ListGroup.Item>)}
+
+                    </ListGroup>
+                </Container>
+            </Col>
+
+            <Col md={10}>
 
                 <Container>
                     <p>{description}</p>
@@ -33,19 +54,11 @@ const Project = ({project}) => {
 
 
                 </Container>
-            </Container>
+            </Col>
 
-            <Container>
-                <Button href={url}>View Website</Button>
-                {/* show the technologies */}
-                <ul>
-                    {technologies.map(tech => <li key={tech}>{tech}</li>)}
+            
 
-                </ul>
-
-            </Container>
-
-            <Container>
+            <Col md={{span: 10, offset:2}}>
                 {
                     documentation.map(({element,text}) => {
                         console.log(element)
@@ -59,10 +72,11 @@ const Project = ({project}) => {
                         }
                 })
                 }
-            </Container>
+            </Col>
 
             
             
+        </Row>
         </Container>
     )
 

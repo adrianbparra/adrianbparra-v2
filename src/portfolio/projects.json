@@ -11,6 +11,7 @@
         "documentation": [
             {"element": "p","text":"Tally Ai was created before by a team of lambda developers that were fulfilling an idea from some stakeholders. The idea was to assist small businesses to sort through many reviews, currently from yelp, to get useful data out of them. It would help them make informed business decisions, especially regarding expansion."},
             {"element":"p","text":"Previous team was using Material UI for design and we decided to expand on that. For the settings page, I followed the design given to me by the ux designers. I styled the account settings based on the user flow for easier user setting changes."},
+            {"element":"h2","text":"Updates"},
             {"element": "p", "text":"Worked on a better filtering system for restaurant owners to compare and contrast what their competitors are doing better and what owners can improve on. Updated the backend to use a data set provided by yelp where it was quicker to access and with no limit restrictions compared to the Yelp API that was previously used."},
             {"element":"h2", "text":"Conclusion"},
             {"element": "p", "text": "Working on the frontend and backend for Tally AI was so satisfying. I styled the layout to the exact design given to me by the UX designers. Removing the previous Yelp API made the site load faster when users search for restaurants. With what I learned from school I was able to successfully take over a continued project and complete what was requested."}
@@ -31,6 +32,7 @@
         "description": "I assited a good friend on creating a simple layout and design for his taco catering business. It allowed new customer to get a glimpse of what he had to offer and bring in new customers.",
         "documentation": [
             {"element": "p","text":"Tacos El Rojo is a small taco shop, catering business that is owned by a friend of mine. He was looking to get a simple website to show his new potential customer on his menu and ways to contact him. I had full ux design responsibilities to make it loop most appealing with his personal logo."},
+            {"element": "h2", "text":"Fast & Clean"},
             {"element":"p","text":"I used tailwind for styling to quickly and efficiently give the website a clean look. It was my first time using tailwind but it was easy to set up and style the website. It is designed on mobile first approach since most visitors were mobile users."},
             {"element":"p","text":"The owner of Tacos El Rojo was very proud of his logo and his only request was to have it front and center. I used it as a background for all the pages. I will be redesigning it at a later time for him since I did state that I look like the page has not content with only a large logo. The website only shows his manu and customers have to call in their order. When he expands that logo will be getting smaller and more options to order."},
             {"element":"h2", "text":"Conclusion"},

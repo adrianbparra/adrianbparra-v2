@@ -1,5 +1,5 @@
 import React from "react"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import Image from "gatsby-image"
 
 import Container from "react-bootstrap/Container"
@@ -13,12 +13,12 @@ import Row from "react-bootstrap/Row"
 const Project = ({project}) => {
 
     const { title, subtitle, description, url, technologies, documentation}  = project;
-    const imgLogo = project.image.childImageSharp.fluid;
+    // const imgLogo = project.image.childImageSharp.fluid;
     const imgDesktop = project.image_desktop.childImageSharp.fluid;
     const imgMobile = project.image_mobile.childImageSharp.fluid;
 
     return (
-        <Container>
+        <Container fluid>
             <Jumbotron>
                 <h1>{title}</h1>
                 <h3>{subtitle}</h3>
@@ -27,8 +27,8 @@ const Project = ({project}) => {
         <Row>
 
             
-            <Col md={2}>
-                <Button variant="info" href={url} block>View Website</Button>
+            <Col md={3}>
+                <Button variant="info" href={url} target="_blank" rel="noopener noreferrer" block>View Website</Button>
 
                 <Container fluid="true">
                     <h4 className="tech-title">Technologies</h4>
@@ -41,7 +41,7 @@ const Project = ({project}) => {
                 </Container>
             </Col>
 
-            <Col md={10}>
+            <Col md={9}>
 
                 <Container>
                     <p>{description}</p>
@@ -58,17 +58,13 @@ const Project = ({project}) => {
 
             
 
-            <Col md={{span: 10, offset:2}}>
+            <Col md={{span: 10, offset:2}} className="project-documentation">
                 {
                     documentation.map(({element,text}) => {
-                        console.log(element)
-                        switch (element) {
-                            case "h2":
-                                return <h2>{text}</h2>
-                            case "p":
-                                return <p>{text}</p>
-                            
-                            
+                        if (element === "h2"){
+                            return <h2>{text}</h2>
+                        } else if (element === "p"){
+                            return <p>{text}</p>
                         }
                 })
                 }

@@ -50,8 +50,6 @@ const ProjectList = () => {
 
     const projects = data.allProjectsJson.nodes;
 
-    // console.log(projects)
-
     return ( 
         <Container className="index-portfolio" fluid>
             {
@@ -60,12 +58,11 @@ const ProjectList = () => {
                     const imgLogo = project.image.childImageSharp.fluid;
                     const imgDesktop = project.image_desktop.childImageSharp.fluid;
                     const imgMobile = project.image_mobile.childImageSharp.fluid;
-                    console.log(project)
 
                     return (
-                        <Row xs={12}  key={id}>
+                        <Row xs={12}  key={id} className="project-list">
                             
-                            <Col xs={12} md={6} lg={6} xl={3} className="project-main">
+                            <Col xs={12} md={6} lg={6} xl={3} className="project-info">
                                 <Link to={`/portfolio/${slug}/`} title={slug} className="project-title">
                                     <Image fluid={imgLogo} alt={title}/>
                                     <div><span>{title}</span></div>

@@ -1,28 +1,31 @@
 .index-portfolio
     padding: 0 2rem
 
-
-    .project-main
-
-        .project-title
-            color: var(--cyan)
-            font-size: 1.6em
-            font-weight: 700
-            
-
-    @include media-breakpoint-only(lg)
-
-        .project-mobile-img
-            display: none
-                
-    @include media-breakpoint-only(md)
-
-        .project-desktop-img
-            display: none
-
-    @include media-breakpoint-down(sm)
     
-        .project-desktop-img
-            display: none
-        .project-mobile-img
-            display: none
+    .project-list
+        padding: 2rem 0
+
+        .project-info
+
+            .project-title
+                color: var(--cyan)
+                font-size: 1.6em
+                font-weight: 700
+                
+
+        @include media-breakpoint-only(lg)
+
+            .project-mobile-img
+                display: none
+                    
+        @include media-breakpoint-only(md)
+
+            .project-desktop-img
+                display: none
+
+        @include media-breakpoint-down(sm)
+        
+            .project-desktop-img
+                display: none
+            .project-mobile-img
+                display: none

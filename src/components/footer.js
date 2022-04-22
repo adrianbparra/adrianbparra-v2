@@ -18,7 +18,9 @@ const Footer = () =>(
                 <div className="footer-img">
                     <img src={APLogo}  alt="ap logo" className="ap-footer-logo"/>
                 </div>
-                <div className="footer-about-me"><p>I am a Full Stack Web Developer with experience in many <Link to="/about">languages and library's</Link>. I have created many Front end and Back end websites that are built with best practices.</p></div>
+                <div className="footer-about-me">
+                    <p>I am a Full Stack Web Developer with experience in many <Link to="/about">languages and library's</Link>. I have created many Front end and Back end websites that are built with best practices.</p>
+                </div>
             </Col>
 
             <Col sm={6}  md={4} xl={3} as="dl">

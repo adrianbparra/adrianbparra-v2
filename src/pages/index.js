@@ -5,8 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectList from "../components/projectsList"
 
-import { FaNodeJs } from "react-icons/fa";
-
 import Jumbotron from "react-bootstrap/Jumbotron"
 import Container from "react-bootstrap/Container"
 import Card from "react-bootstrap/Card"
@@ -18,48 +16,50 @@ const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
 
-    <Jumbotron fluid className="text-center index-title">
+    <Jumbotron fluid className="index-title">
       <h1>Full Stack Web Developer</h1>
-      <p className="subtitle">Hello. My name is Adrian Parra, I am a Full Stack Web Developer. Creating appealing websites that operate.</p>
+      <p className="subtitle">Hello. My name is Adrian Parra, I am a Full Stack Web Developer. Creating appealing websites that go beyond operation.</p>
     </Jumbotron>
   
     <Container className="index-types" fluid="md">
-      <Row xs={1} md={3} className="justify-content-around">
-
-        <Card className="text-center">
+      <Row xs={1} md={3}>
+        <Card>
           <Card.Header>
-            Front End
+            FRONT END
           </Card.Header>
 
           <ListGroup variant="flush">
             <ListGroup.Item>React</ListGroup.Item>
             <ListGroup.Item>Javascript</ListGroup.Item>
+            <ListGroup.Item>C#</ListGroup.Item>
             <ListGroup.Item>SASS</ListGroup.Item>
-            <ListGroup.Item>CSS</ListGroup.Item>
-
           </ListGroup>
 
         </Card>
 
-
-        <Card className="text-center">
+        <Card>
           <Card.Header>
-              Back End
+              BACK END
           </Card.Header>
           <ListGroup variant="flush">
-            <ListGroup.Item><FaNodeJs/>Node</ListGroup.Item>
-            
-
+            <ListGroup.Item>Node.js</ListGroup.Item>
+            <ListGroup.Item>.NET</ListGroup.Item>
+            <ListGroup.Item>MSSQL</ListGroup.Item>
+            <ListGroup.Item>PostgreSQL</ListGroup.Item>
           </ListGroup>
         </Card>
       </Row>
     </Container>
 
-    <Jumbotron fluid className="text-center index-title">
-      <h2>Featured Work</h2>
-    </Jumbotron>
+    <Container fluid>
 
-    <ProjectList/>
+      <Jumbotron fluid className="index-title feature">
+        
+        <h2>Featured Work</h2>
+      </Jumbotron>
+
+      <ProjectList/>
+    </Container>
 
   </Layout>
 )

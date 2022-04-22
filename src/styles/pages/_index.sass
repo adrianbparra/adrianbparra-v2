@@ -1,9 +1,12 @@
 .index-title
     background-color: white
+    text-align: center
     h1
         font-weight: 700
     p
         font-size: 1.2rem
+
+
 
     @include media-breakpoint-up(lg) 
         h1
@@ -20,11 +23,17 @@
             padding-right: 12rem
             padding-left: 12rem
 
+.feature
+    border-top: 1px solid black
+    margin-top: 2rem
 
 .index-types
+    .row
+        display: flex
+        justify-content: space-around
     .card
+        text-align: center
         .card-header
             font-size: 1.5rem
             font-weight: 700
 
-            

@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectList from "../components/projectsList"
 
-import Jumbotron from "react-bootstrap/Jumbotron"
+// import Jumbotron from "react-bootstrap/Jumbotron"
 import Container from "react-bootstrap/Container"
 import Card from "react-bootstrap/Card"
 import Row from "react-bootstrap/Row"
@@ -16,12 +16,12 @@ const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
 
-    <Jumbotron fluid className="index-title">
+    <Container fluid className="index-title">
       <h1>Full Stack Web Developer</h1>
-      <p className="subtitle">Hello. My name is Adrian Parra, I am a Full Stack Web Developer. Creating appealing websites that go beyond operation.</p>
-    </Jumbotron>
+      <p className="subtitle">Hello, My name is Adrian Parra, I am a Full Stack Web Developer. Creating appealing websites that go beyond operation.</p>
+    </Container>
   
-    <Container className="index-types" fluid="md">
+    <Container className="index-tech" fluid="md">
       <Row xs={1} md={3}>
         <Card>
           <Card.Header>
@@ -50,13 +50,12 @@ const IndexPage = (props) => (
         </Card>
       </Row>
     </Container>
-
+    <hr/>
     <Container fluid>
 
-      <Jumbotron fluid className="index-title feature">
-        
-        <h2>Featured Work</h2>
-      </Jumbotron>
+      <h2 className="feature-work">
+        Feature Work
+      </h2>
 
       <ProjectList/>
     </Container>

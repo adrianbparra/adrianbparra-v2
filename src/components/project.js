@@ -3,7 +3,7 @@ import React from "react"
 import Image from "gatsby-image"
 
 import Container from "react-bootstrap/Container"
-import Jumbotron from "react-bootstrap/Jumbotron"
+// import Jumbotron from "react-bootstrap/Jumbotron"
 import Button from "react-bootstrap/Button"
 import ListGroup from "react-bootstrap/ListGroup";
 import Col from "react-bootstrap/Col"
@@ -19,10 +19,10 @@ const Project = ({project}) => {
 
     return (
         <Container fluid>
-            <Jumbotron>
+            {/* <Jumbotron>
                 <h1>{title}</h1>
                 <h3>{subtitle}</h3>
-            </Jumbotron>
+            </Jumbotron> */}
 
         <Row>
 

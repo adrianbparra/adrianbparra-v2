@@ -1,0 +1,29 @@
+.contact
+
+    .header
+        h1
+            font-size: clamp(1.3rem, calc(1rem + 2vw), 3.3rem)
+            font-weight: 700
+        p
+            font-size: clamp(.8rem, calc(1rem + .5vh), 2.6rem)
+
+    @include media-breakpoint-up(lg)
+        padding: 0 10.4rem
+
+    .form
+        padding-top: 3rem
+        padding-bottom: 3rem
+
+        .fields
+            input, textarea
+                border-color: black
+            .req
+                color: red
+            *
+                margin-bottom: 1rem
+
+        .btn
+            @include button
+            
+
+

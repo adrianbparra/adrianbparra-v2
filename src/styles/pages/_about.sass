@@ -1,0 +1,18 @@
+.about
+    .header
+        @include header
+
+    .info
+        margin-bottom: 4rem
+
+        .contact-link
+            &:visited
+                color: black
+            &:hover
+                text-decoration: none
+
+    .button-container
+        text-align: center
+
+        .contact-me-button
+            @include button($size: 2.4rem)

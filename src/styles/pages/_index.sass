@@ -1,39 +1,47 @@
-.index-title
-    background-color: white
-    text-align: center
-    h1
-        font-weight: 700
-    p
-        font-size: 1.2rem
-
-
-
-    @include media-breakpoint-up(lg) 
-        h1
-            font-size: 4rem
-        p
-            font-size: 2rem
-            
-    
-    @include media-breakpoint-up(xl)
-        h1
-            font-size: 5rem
-    
-        p
-            padding-right: 12rem
-            padding-left: 12rem
-
-.feature
-    border-top: 1px solid black
-    margin-top: 2rem
-
-.index-types
-    .row
-        display: flex
-        justify-content: space-around
-    .card
+.index
+    .header
         text-align: center
-        .card-header
-            font-size: 1.5rem
+        margin: 8rem 0
+        h1
             font-weight: 700
+        p
+            font-size: 1.2rem
+
+        @include media-breakpoint-up(lg) 
+            h1
+                font-size: 4rem
+            p
+                font-size: 2rem          
+        
+        @include media-breakpoint-up(xl)
+            h1
+                font-size: 5rem
+            p
+                padding-right: 12rem
+                padding-left: 12rem
+
+    .feature-title
+        text-align: center
+        margin-top: 2rem
+        padding: 2rem 0
+        font-weight: 700
+        @include media-breakpoint-up(lg) 
+            font-size: 3rem
+        
+        @include media-breakpoint-up(xl)
+            font-size: 4rem
+
+
+    .tech
+        margin: 4rem auto
+        .row
+            display: flex
+            justify-content: space-around
+        .card
+            margin-top: 2rem
+            margin-bottom: 2rem
+            text-align: center
+            .card-header
+                font-size: 1.5rem
+                font-weight: 700
 

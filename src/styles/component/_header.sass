@@ -1,12 +1,12 @@
-
-
 header
-    
-
     .navbar
-        background-color: var(--cyan)
+        justify-content: space-between
+        background-color: white
+        border-bottom: 2px solid black
         font-family: $font-title
         min-width: 320px
+        padding-left: 1rem
+        padding-right: 1rem
         @include media-breakpoint-up(lg)
             padding-left: 2rem
             padding-right: 2rem
@@ -24,33 +24,42 @@ header
             @include media-breakpoint-up(sm)
                 font-size: 2rem
                 font-weight: 800
+            &:hover #a
+                transform: rotate(-18deg) translate(-1px, 11px)
+            &:hover #p
+                transform: rotate(23deg) translate(-1px, -14px)
 
             .logo
-                @include media-breakpoint-up(sm)
-                    width: 50px
-                    height: 50px
-        
-        .navbar-nav
-            font-size: 1.4rem
-            font-weight: 600
-        
-            .nav-link
-                position: relative
-                &::after
-                    content: ""
-                    visibility: hidden
-                    position: absolute
-                    left: .6em
-                    right: .6em
-                    bottom: 0
-                    height: .12em
-                    background-color: black
-                    transform: scaleY(0)
-                    transform-origin: 0 50%
-                    transition-duration: .3s
-                    transition-property: transform
+                width: 48px
+                height: 48px
+                #a,#p
+                    transition: all 1s ease
+                    
 
-                &:hover::after, &:focus::after, &.active::after
-                    visibility: visible!important
-                    transform: scaleY(1)
+        .nav-links
+            justify-content: end
+            .navbar-nav
+                font-size: 1.4rem
+                font-weight: 600
+            
+                .nav-link
+                    text-align: center
+                    position: relative
+                    &::after
+                        content: ""
+                        visibility: hidden
+                        position: absolute
+                        left: .6em
+                        right: .6em
+                        bottom: 0
+                        height: .12em
+                        background-color: black
+                        transform: scaleY(0)
+                        transform-origin: 0 50%
+                        transition-duration: .3s
+                        transition-property: transform
+
+                    &:hover::after, &:focus::after, &.active::after
+                        visibility: visible!important
+                        transform: scaleY(1)
 

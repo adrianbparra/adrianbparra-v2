@@ -13,15 +13,15 @@ import { ListGroup } from "react-bootstrap";
 
 
 const IndexPage = (props) => (
-  <Layout>
-    <SEO title="Home" />
+  <Layout page={"index"}>
+    <SEO title="Home"/>
 
-    <Container fluid className="index-title">
+    <Container fluid className="header">
       <h1>Full Stack Web Developer</h1>
       <p className="subtitle">Hello, My name is Adrian Parra, I am a Full Stack Web Developer. Creating appealing websites that go beyond operation.</p>
     </Container>
   
-    <Container className="index-tech" fluid="md">
+    <Container className="tech" fluid="md">
       <Row xs={1} md={3}>
         <Card>
           <Card.Header>
@@ -53,7 +53,7 @@ const IndexPage = (props) => (
     <hr/>
     <Container fluid>
 
-      <h2 className="feature-work">
+      <h2 className="feature-title">
         Feature Work
       </h2>
 

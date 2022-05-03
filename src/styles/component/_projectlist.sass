@@ -1,4 +1,4 @@
-.index-portfolio
+.project-container
     padding: 0 2rem
 
     
@@ -8,9 +8,12 @@
         .project-info
 
             .project-title
-                color: var(--cyan)
+                color: black
                 font-size: 1.6em
                 font-weight: 700
+                &:hover
+                    text-decoration: none
+                
                 
 
         @include media-breakpoint-only(lg)
@@ -29,3 +32,9 @@
                 display: none
             .project-mobile-img
                 display: none
+    
+    .button-projects-list
+        text-align: center
+
+        .contact-me-button
+            @include button($size: 2.4rem)

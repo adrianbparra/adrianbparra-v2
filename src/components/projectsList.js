@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import Image from "gatsby-image"
 
@@ -47,11 +46,10 @@ const ProjectList = () => {
         }
     `)
 
-
     const projects = data.allProjectsJson.nodes;
 
     return ( 
-        <Container className="index-portfolio" fluid>
+        <Container className="project-container" fluid>
             {
                 projects.map(project => {
                     const {id, title, slug, description} = project;
@@ -65,7 +63,9 @@ const ProjectList = () => {
                             <Col xs={12} md={6} lg={6} xl={3} className="project-info">
                                 <Link to={`/portfolio/${slug}/`} title={slug} className="project-title">
                                     <Image fluid={imgLogo} alt={title}/>
-                                    <div><span>{title}</span></div>
+                                    <div className="project-name">
+                                        <span>{title}</span>
+                                    </div>
                                 </Link>
                                 <p>{description}</p>
                             </Col>
@@ -84,6 +84,12 @@ const ProjectList = () => {
                     )
                 })
             }
+
+            <Container className="button-projects-list">
+                <Link to={"/contact"} className="contact-me-button">
+                    Contact Me
+                </Link>
+            </Container>
 
         </Container>
     )

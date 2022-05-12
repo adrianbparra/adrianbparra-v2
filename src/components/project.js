@@ -87,10 +87,10 @@ Project.propTypes = {
     subtitle: PropTypes.string, 
     description: PropTypes.string, 
     url: PropTypes.string, 
-    technologies: propTypes.array, 
-    documentation: propTypes.object,
-    imgDesktop: propTypes.any,
-    imgMobile: propTypes.any
+    technologies: PropTypes.array, 
+    documentation: PropTypes.object,
+    imgDesktop: PropTypes.any,
+    imgMobile: PropTypes.any
 }
 
 export default Project

@@ -18,7 +18,7 @@ const About = () => (
             <p>
                 I am a Full Stack Web Developer creating website that make a positive change.
                 I create website that are reliable, easy to use, and with best practices.
-                I love to learn new technology to achieve my dreams and even yours to complete your project.
+                I love to learn new technology to achieve my dreams and even yours when completing your project.
             </p>
 
             <p>
@@ -27,13 +27,13 @@ const About = () => (
             </p>
 
             <p>
-                My main experiance is in Front End development but a passion for Back End data management as well. 
+                My main experiance is in Front End development but I have a  passion for Back End data management as well. 
                 With the love for Full Stack Web Development I can create applicatons that not only look appealing but handle data for your business.
-                There is so many areas in Development it is always best to know parts of all to better understand client needs and requirements.
+                There is so many areas in Development it is always best to know little bit of everything to better understand client needs and requirements.
             </p>
 
             <p>
-                I take pride in completing client needs and offer solutions that resolve problems they encounter. 
+                I take pride in completing client needs and offer solutions that resolve problems we encounter. 
                 I will work until the project is 100% completed and operational.
             </p>
 
@@ -43,6 +43,11 @@ const About = () => (
 
             <p>
                 I use HTML, CSS, JavaScript and C# to create responsive websites that provide best practice and clean code.
+            </p>
+
+            <p>
+                I can follow UI/UX designs if provided or I can design to your liking in Figma.
+                I can match wireframes and mock-ups as close to your specifications and requirements.
             </p>
 
             <p>
@@ -59,9 +64,9 @@ const About = () => (
             </p>
 
             <p>
-                I can create different types of servers to handle your important data that is easily accessible and safe.
+                I can create a wide variety types of servers to handle your important data that is easily accessible and safe.
                 I use technology that better suites your business needs.
-                I am capable or learning new technology if it comes to making your site even better.
+                I am capable of learning new technology if it comes to making your site even better.
             </p>
 
         </Container>

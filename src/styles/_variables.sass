@@ -20,6 +20,13 @@ $bg-cyan: #0dcaf0
         border-color: white
     &:visited
         color: black
+    &:disabled
+        cursor: not-allowed
+        pointer-events: all !important
+    &:disabled:hover
+        color: black !important
+        background-color: white !important
+        border-color: black
 
 
 @mixin header

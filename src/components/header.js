@@ -28,9 +28,9 @@ const Header = ({ siteTitle }) => {
         <Navbar.Collapse id="basic-navbar-nav" className="nav-links">
           <Nav>
             <Nav.Link as={Link} to="/" activeClassName="active">Home</Nav.Link>
-            <Nav.Link as={Link} to="/portfolio" activeClassName="active" partiallyActive={true}>Portfolio</Nav.Link>
-            <Nav.Link as={Link} to="/about" activeClassName="active">About</Nav.Link>
-            <Nav.Link as={Link} to="/contact" activeClassName="active">Contact</Nav.Link>
+            <Nav.Link as={Link} to="/portfolio/" activeClassName="active" partiallyActive={true}>Portfolio</Nav.Link>
+            <Nav.Link as={Link} to="/about/" activeClassName="active">About</Nav.Link>
+            <Nav.Link as={Link} to="/contact/" activeClassName="active">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

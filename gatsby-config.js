@@ -5,6 +5,13 @@ module.exports = {
     author: `@Adrian_B_Parra`,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-W7LCKF5",
+        includeInDevelopment: false,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-recaptcha`,
     {
@@ -33,12 +40,10 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/AP-Logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/AP-Logo.png`,
       },
     },
     `gatsby-plugin-sass`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
+  
 }

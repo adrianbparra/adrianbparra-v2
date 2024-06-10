@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkadrianbparra_website=self.webpackChunkadrianbparra_website||[]).push([[125],{3331:function(e,t,a){a.r(t);var n=a(6540),l=a(8013),r=a(2269);t.default=()=>n.createElement(l.A,null,n.createElement(r.A,{title:"404: Not found"}),n.createElement("h1",null,"404: Not Found"),n.createElement("p",null,"You just hit a route that doesn't exist... the sadness."))}}]);
+//# sourceMappingURL=component---src-pages-404-js-1e86885c518aa52c6ad5.js.map

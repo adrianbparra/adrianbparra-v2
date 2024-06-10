@@ -70,4 +70,4 @@ A quick look at the files and directories you'll see in a Gatsby Portfolio proje
     1. **`/components`**: All main components
     1. **`/images`**: Images for main website
     1. **`/pages`**: Gatsby pages for site
-    1. **`/portfolio`**: JSON data for projests displayed in projects list page. Read more about it [portfolio/readme](src/portfolio//readme.md)
+    1. **`/portfolio`**: JSON data for projests displayed in projects list page. Read more about it [portfolio/readme](src/portfolio/)

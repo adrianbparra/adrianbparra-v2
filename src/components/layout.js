@@ -9,7 +9,7 @@ import Container from "react-bootstrap/Container"
 
 import "../styles/main.sass"
 
-const Layout = ( props ) => {
+const Layout = props => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,15 +26,14 @@ const Layout = ( props ) => {
       <Container fluid>
         <main className={`${props.page} main`}>{props.children}</main>
       </Container>
-      <Footer/>
-  
+      <Footer />
     </>
   )
 }
 
 Layout.propTypes = {
   page: PropTypes.string,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout

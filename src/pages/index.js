@@ -9,24 +9,24 @@ import ProjectList from "../components/projectsList"
 import Container from "react-bootstrap/Container"
 import Card from "react-bootstrap/Card"
 import Row from "react-bootstrap/Row"
-import { ListGroup } from "react-bootstrap";
+import { ListGroup } from "react-bootstrap"
 
-
-const IndexPage = (props) => (
+const IndexPage = props => (
   <Layout page={"index"}>
-    <SEO title="Home"/>
+    <SEO title="Home" />
 
     <Container fluid className="header">
       <h1>Full Stack Web Developer</h1>
-      <p className="subtitle">Hello, My name is Adrian Parra, I am a Full Stack Web Developer. Creating appealing websites that go beyond operation.</p>
+      <p className="subtitle">
+        Hello, My name is Adrian Parra, I am a Full Stack Web Developer.
+        Creating appealing websites that go beyond operation.
+      </p>
     </Container>
-  
+
     <Container className="tech" fluid="md">
       <Row xs={1} md={3}>
         <Card>
-          <Card.Header>
-            FRONT END
-          </Card.Header>
+          <Card.Header>FRONT END</Card.Header>
 
           <ListGroup variant="flush">
             <ListGroup.Item>React</ListGroup.Item>
@@ -34,13 +34,10 @@ const IndexPage = (props) => (
             <ListGroup.Item>C#</ListGroup.Item>
             <ListGroup.Item>SASS</ListGroup.Item>
           </ListGroup>
-
         </Card>
 
         <Card>
-          <Card.Header>
-              BACK END
-          </Card.Header>
+          <Card.Header>BACK END</Card.Header>
           <ListGroup variant="flush">
             <ListGroup.Item>Node.js</ListGroup.Item>
             <ListGroup.Item>.NET</ListGroup.Item>
@@ -50,16 +47,12 @@ const IndexPage = (props) => (
         </Card>
       </Row>
     </Container>
-    <hr/>
+    <hr />
     <Container fluid>
+      <h2 className="feature-title">Feature Work</h2>
 
-      <h2 className="feature-title">
-        Feature Work
-      </h2>
-
-      <ProjectList/>
+      <ProjectList />
     </Container>
-
   </Layout>
 )
 

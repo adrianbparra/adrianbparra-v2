@@ -5,19 +5,19 @@ import ProjectList from "../components/projectsList"
 
 import Container from "react-bootstrap/Container"
 
+const Portfolio = () => (
+  <Layout page="portfolio">
+    <SEO title="Portfolio" />
 
-const Portfolio = () =>(
-    <Layout page="portfolio">
-        <SEO title="Portfolio"/>
-        
-        <Container fluid className="header">
-            <h1>Full Stack Portfolio</h1>
-            <p>Websites created with best practice and continuing further development.</p>
-        </Container>
-        
-        <ProjectList/>
+    <Container fluid className="header">
+      <h1>Full Stack Portfolio</h1>
+      <p>
+        Websites created with best practice and continuing further development.
+      </p>
+    </Container>
 
-    </Layout>
+    <ProjectList />
+  </Layout>
 )
 
 export default Portfolio

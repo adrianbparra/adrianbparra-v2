@@ -1,15 +1,31 @@
-Hello! from one of my contacts in the dev hiring world here are some tips for your portfolio.
+## Projects Templete
 
-#Include documentation on portfolio projects.
+Projects built and displayed by gatsby-source-filesystem
 
-##There are 10 different sections you should consider adding to your documentation.
-    ➽ Why did you build this?
-    ➽ How do you use this?
-    ➽ What is this?
-    ➽ Documentation along with examples of what you’ve built or code snippets
-    ➽ What are the technologies used?
-    ➽ What are the prerequisites?
-    ➽ Getting started guide (Installation)
-    ➽ Roadmap (only utilized if your project will be used long term)
-    ➽ Demo & Current Build Status
-    ➽ Credits & License
+Update projects.json with new projects created.
+
+```shell
+[
+   {
+       "title": "h1 content",
+       "subtitle": "h3 content",
+       "url": "url if site is hosted",
+       "slug": "",
+       "image": "./images/`image name`",
+       "image_mobile": "./images/`image name`",
+       "image_desktop": "./images/`image name`",
+       "description": "content of description": [
+       {
+           "element": "HTML element",
+           "text": "content"
+       },...
+
+       ],
+       "technologies": [
+       "tech used to build website",
+       ],
+       "roadmap": "content",
+       "credits": "content"
+   },...
+ ]
+```
